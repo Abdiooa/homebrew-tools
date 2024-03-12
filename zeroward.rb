@@ -5,12 +5,12 @@
 class Zeroward < Formula
   desc ""
   homepage "https://github.com/Abdiooa/homebrew-tools"
-  version "1.0.41"
+  version "1.0.44"
   license "Apache"
 
   on_macos do
-    url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.41/zeroward_1.0.41_darwin-all.tar.gz"
-    sha256 "5e99f3ccecb0dce24660532c26b8e0f2a6f1a16d28ea5c59e18cd7910df56fb0"
+    url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.44/zeroward_1.0.44_darwin-all.tar.gz"
+    sha256 "357b3d33c24f57ee33dc16c1b7ed3cdf94248c200c31f43316cb141a6e97bf15"
 
     def install
       bin.install "zeroward"
@@ -19,16 +19,16 @@ class Zeroward < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.41/zeroward_1.0.41_linux-arm64.tar.gz"
-      sha256 "12c09751f8e7bbb0c1763d4700f1af682c908f832e09f6e286abf1f523228afa"
+      url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.44/zeroward_1.0.44_linux-arm64.tar.gz"
+      sha256 "6e4399ac7bf00babf5f096daa1d05edbf3022094be869adbbbbbac4726ea38dc"
 
       def install
         bin.install "zeroward"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.41/zeroward_1.0.41_linux-amd64.tar.gz"
-      sha256 "fed54fc8f78d9bbe149511676176db034ad1b03c9b6803300d610bd30f6bc43a"
+      url "https://github.com/Abdiooa/zeroward/releases/download/v1.0.44/zeroward_1.0.44_linux-amd64.tar.gz"
+      sha256 "dcb6b5e52b98211f7e5d9bb7332eb4dcdde1d0c6ada28253724df1c93a0d9792"
 
       def install
         bin.install "zeroward"
